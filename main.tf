@@ -25,6 +25,9 @@ provider "aws" {
   region     = "${var.region}"
 }
 
+variable "public_key" {}
+variable "private_key" {}
+
 module "server" {
   source = "./server"
 
